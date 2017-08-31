@@ -15,6 +15,7 @@
 		901AE3D31F58008600DCE740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901AE3D11F58008600DCE740 /* LaunchScreen.storyboard */; };
 		901AE3DE1F58008600DCE740 /* WXZTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3DD1F58008600DCE740 /* WXZTipTests.m */; };
 		901AE3E91F58008600DCE740 /* WXZTipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3E81F58008600DCE740 /* WXZTipUITests.m */; };
+		901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3F81F5801B600DCE740 /* WXZTipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		901AE3E41F58008600DCE740 /* WXZTipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXZTipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901AE3E81F58008600DCE740 /* WXZTipUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXZTipUITests.m; sourceTree = "<group>"; };
 		901AE3EA1F58008600DCE740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901AE3F71F5801B600DCE740 /* WXZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXZTipView.h; sourceTree = "<group>"; };
+		901AE3F81F5801B600DCE740 /* WXZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXZTipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		901AE3C21F58008600DCE740 /* WXZTip */ = {
 			isa = PBXGroup;
 			children = (
+				901AE3F61F5801B600DCE740 /* Tip */,
 				901AE3C61F58008600DCE740 /* AppDelegate.h */,
 				901AE3C71F58008600DCE740 /* AppDelegate.m */,
 				901AE3C91F58008600DCE740 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				901AE3EA1F58008600DCE740 /* Info.plist */,
 			);
 			path = WXZTipUITests;
+			sourceTree = "<group>";
+		};
+		901AE3F61F5801B600DCE740 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				901AE3F71F5801B600DCE740 /* WXZTipView.h */,
+				901AE3F81F5801B600DCE740 /* WXZTipView.m */,
+			);
+			path = Tip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
 				901AE3CB1F58008600DCE740 /* ViewController.m in Sources */,
 				901AE3C81F58008600DCE740 /* AppDelegate.m in Sources */,
 				901AE3C51F58008600DCE740 /* main.m in Sources */,
@@ -516,6 +530,7 @@
 				901AE3EF1F58008600DCE740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901AE3F01F58008600DCE740 /* Build configuration list for PBXNativeTarget "WXZTipTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +539,7 @@
 				901AE3F21F58008600DCE740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901AE3F31F58008600DCE740 /* Build configuration list for PBXNativeTarget "WXZTipUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +548,7 @@
 				901AE3F51F58008600DCE740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

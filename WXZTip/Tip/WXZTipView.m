@@ -151,13 +151,11 @@
 }
 #pragma mark-下方显示
 + (void)showBottomWithText:(NSString *)text{
-    [WXZTipView showCenterWithText:text];
-//    [WXZTipView showBottomWithText:text  bottomOffset:ToastSpace duration:ToastDispalyDuration];
+    [WXZTipView showBottomWithText:text  bottomOffset:ToastSpace duration:ToastDispalyDuration];
 }
 + (void)showBottomWithText:(NSString *)text duration:(CGFloat)duration
 {
-    [WXZTipView showCenterWithText:text duration:duration];
-//    [WXZTipView showBottomWithText:text  bottomOffset:ToastSpace duration:duration];
+    [WXZTipView showBottomWithText:text  bottomOffset:ToastSpace duration:duration];
 }
 + (void)showBottomWithText:(NSString *)text bottomOffset:(CGFloat)bottomOffset{
 

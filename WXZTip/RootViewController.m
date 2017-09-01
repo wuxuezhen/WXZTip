@@ -75,11 +75,17 @@
 
 //自定义视图
 -(UIView *)customView{
-    UIView *view = [[UIView alloc]init];
-    view.backgroundColor = [UIColor redColor];
-    view.layer.cornerRadius = 25;
-    view.layer.masksToBounds = YES;
-    return view;
+    UIImageView *gifImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Loading_1"]];
+    NSMutableArray *arrM = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 12; i ++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"Loading_%d", i + 1]];
+        [arrM addObject:image];
+    }
+    [gifImageView setAnimationImages:arrM];
+    [gifImageView setAnimationDuration:1.5];
+    [gifImageView setAnimationRepeatCount:0];
+    [gifImageView startAnimating];
+    return gifImageView;
 }
 
 //私有

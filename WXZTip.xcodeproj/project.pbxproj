@@ -16,6 +16,9 @@
 		901AE3DE1F58008600DCE740 /* WXZTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3DD1F58008600DCE740 /* WXZTipTests.m */; };
 		901AE3E91F58008600DCE740 /* WXZTipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3E81F58008600DCE740 /* WXZTipUITests.m */; };
 		901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3F81F5801B600DCE740 /* WXZTipView.m */; };
+		901AE40C1F590FF900DCE740 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE40B1F590FF900DCE740 /* MBViewController.m */; };
+		901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE40E1F59100D00DCE740 /* RootViewController.m */; };
+		901AE4121F5910DA00DCE740 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE4111F5910DA00DCE740 /* TipViewController.m */; };
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,12 @@
 		901AE3EA1F58008600DCE740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		901AE3F71F5801B600DCE740 /* WXZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXZTipView.h; sourceTree = "<group>"; };
 		901AE3F81F5801B600DCE740 /* WXZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXZTipView.m; sourceTree = "<group>"; };
+		901AE40A1F590FF900DCE740 /* MBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
+		901AE40B1F590FF900DCE740 /* MBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
+		901AE40D1F59100C00DCE740 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		901AE40E1F59100D00DCE740 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		901AE4101F5910DA00DCE740 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		901AE4111F5910DA00DCE740 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,8 +140,14 @@
 				901AE3F61F5801B600DCE740 /* Tip */,
 				901AE3C61F58008600DCE740 /* AppDelegate.h */,
 				901AE3C71F58008600DCE740 /* AppDelegate.m */,
+				901AE40D1F59100C00DCE740 /* RootViewController.h */,
+				901AE40E1F59100D00DCE740 /* RootViewController.m */,
 				901AE3C91F58008600DCE740 /* ViewController.h */,
 				901AE3CA1F58008600DCE740 /* ViewController.m */,
+				901AE4101F5910DA00DCE740 /* TipViewController.h */,
+				901AE4111F5910DA00DCE740 /* TipViewController.m */,
+				901AE40A1F590FF900DCE740 /* MBViewController.h */,
+				901AE40B1F590FF900DCE740 /* MBViewController.m */,
 				901AE3CC1F58008600DCE740 /* Main.storyboard */,
 				901AE3CF1F58008600DCE740 /* Assets.xcassets */,
 				901AE3D11F58008600DCE740 /* LaunchScreen.storyboard */,
@@ -364,9 +379,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901AE40C1F590FF900DCE740 /* MBViewController.m in Sources */,
 				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
+				901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */,
 				901AE3CB1F58008600DCE740 /* ViewController.m in Sources */,
 				901AE3C81F58008600DCE740 /* AppDelegate.m in Sources */,
+				901AE4121F5910DA00DCE740 /* TipViewController.m in Sources */,
 				901AE3C51F58008600DCE740 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

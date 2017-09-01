@@ -16,6 +16,7 @@
 		901AE3DE1F58008600DCE740 /* WXZTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3DD1F58008600DCE740 /* WXZTipTests.m */; };
 		901AE3E91F58008600DCE740 /* WXZTipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3E81F58008600DCE740 /* WXZTipUITests.m */; };
 		901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901AE3F81F5801B600DCE740 /* WXZTipView.m */; };
+		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2E1740AB54F4F31D7E68ED /* Pods-WXZTip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.release.xcconfig"; sourceTree = "<group>"; };
+		4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WXZTip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		901AE3C01F58008600DCE740 /* WXZTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXZTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901AE3C41F58008600DCE740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		901AE3C61F58008600DCE740 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		901AE3EA1F58008600DCE740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		901AE3F71F5801B600DCE740 /* WXZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXZTipView.h; sourceTree = "<group>"; };
 		901AE3F81F5801B600DCE740 /* WXZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXZTipView.m; sourceTree = "<group>"; };
+		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D6DB120A1E0CDF3FB98F84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */,
+				1E2E1740AB54F4F31D7E68ED /* Pods-WXZTip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49FD9BD3129E16D52198FBC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		901AE3B71F58008600DCE740 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 				901AE3DC1F58008600DCE740 /* WXZTipTests */,
 				901AE3E71F58008600DCE740 /* WXZTipUITests */,
 				901AE3C11F58008600DCE740 /* Products */,
+				1D6DB120A1E0CDF3FB98F84F /* Pods */,
+				49FD9BD3129E16D52198FBC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901AE3ED1F58008600DCE740 /* Build configuration list for PBXNativeTarget "WXZTip" */;
 			buildPhases = (
+				226799DDE570A1B03E07F1CA /* [CP] Check Pods Manifest.lock */,
 				901AE3BC1F58008600DCE740 /* Sources */,
 				901AE3BD1F58008600DCE740 /* Frameworks */,
 				901AE3BE1F58008600DCE740 /* Resources */,
+				28CF79676574A123A37FB70F /* [CP] Embed Pods Frameworks */,
+				5F3D1F99FA170F06ACE4FE1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +310,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		226799DDE570A1B03E07F1CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28CF79676574A123A37FB70F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F3D1F99FA170F06ACE4FE1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		901AE3BC1F58008600DCE740 /* Sources */ = {
@@ -439,6 +514,7 @@
 		};
 		901AE3EE1F58008600DCE740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A2H3LGABL7;
@@ -451,6 +527,7 @@
 		};
 		901AE3EF1F58008600DCE740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E1740AB54F4F31D7E68ED /* Pods-WXZTip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A2H3LGABL7;

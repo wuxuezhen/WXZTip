@@ -31,6 +31,8 @@
 		901AE4291F59380200DCE740 /* Loading_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41D1F59380200DCE740 /* Loading_7.png */; };
 		901AE42A1F59380200DCE740 /* Loading_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41E1F59380200DCE740 /* Loading_8.png */; };
 		901AE42B1F59380200DCE740 /* Loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41F1F59380200DCE740 /* Loading_9.png */; };
+		90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADD9811F73B9D7009C5498 /* SListViewController.swift */; };
+		90FBE8131F6BDE2600EDD021 /* WDGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FBE8121F6BDE2600EDD021 /* WDGData.m */; };
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,10 @@
 		901AE41D1F59380200DCE740 /* Loading_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading_7.png; sourceTree = "<group>"; };
 		901AE41E1F59380200DCE740 /* Loading_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading_8.png; sourceTree = "<group>"; };
 		901AE41F1F59380200DCE740 /* Loading_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading_9.png; sourceTree = "<group>"; };
+		90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXZTip-Bridging-Header.h"; sourceTree = "<group>"; };
+		90ADD9811F73B9D7009C5498 /* SListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SListViewController.swift; sourceTree = "<group>"; };
+		90FBE8111F6BDE2600EDD021 /* WDGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGData.h; sourceTree = "<group>"; };
+		90FBE8121F6BDE2600EDD021 /* WDGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGData.m; sourceTree = "<group>"; };
 		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +168,7 @@
 		901AE3C21F58008600DCE740 /* WXZTip */ = {
 			isa = PBXGroup;
 			children = (
+				90ADD97F1F73B963009C5498 /* SwiftFile */,
 				901AE3F61F5801B600DCE740 /* Tip */,
 				901AE3C61F58008600DCE740 /* AppDelegate.h */,
 				901AE3C71F58008600DCE740 /* AppDelegate.m */,
@@ -169,6 +176,8 @@
 				901AE40E1F59100D00DCE740 /* RootViewController.m */,
 				901AE3C91F58008600DCE740 /* ViewController.h */,
 				901AE3CA1F58008600DCE740 /* ViewController.m */,
+				90FBE8111F6BDE2600EDD021 /* WDGData.h */,
+				90FBE8121F6BDE2600EDD021 /* WDGData.m */,
 				901AE4101F5910DA00DCE740 /* TipViewController.h */,
 				901AE4111F5910DA00DCE740 /* TipViewController.m */,
 				901AE40A1F590FF900DCE740 /* MBViewController.h */,
@@ -234,6 +243,15 @@
 				901AE41F1F59380200DCE740 /* Loading_9.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		90ADD97F1F73B963009C5498 /* SwiftFile */ = {
+			isa = PBXGroup;
+			children = (
+				90ADD9811F73B9D7009C5498 /* SListViewController.swift */,
+				90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */,
+			);
+			path = SwiftFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +325,7 @@
 					901AE3BF1F58008600DCE740 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = A2H3LGABL7;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					901AE3D81F58008600DCE740 = {
@@ -435,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FBE8131F6BDE2600EDD021 /* WDGData.m in Sources */,
 				901AE40C1F590FF900DCE740 /* MBViewController.m in Sources */,
 				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
 				901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */,
@@ -442,6 +462,7 @@
 				901AE3C81F58008600DCE740 /* AppDelegate.m in Sources */,
 				901AE4121F5910DA00DCE740 /* TipViewController.m in Sources */,
 				901AE3C51F58008600DCE740 /* main.m in Sources */,
+				90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,11 +612,15 @@
 			baseConfigurationReference = C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxz.WXZTip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WXZTip/SwiftFile/WXZTip-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -604,17 +629,21 @@
 			baseConfigurationReference = 1E2E1740AB54F4F31D7E68ED /* Pods-WXZTip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxz.WXZTip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WXZTip/SwiftFile/WXZTip-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		901AE3F11F58008600DCE740 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTipTests/Info.plist;
@@ -628,6 +657,7 @@
 		901AE3F21F58008600DCE740 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTipTests/Info.plist;
@@ -641,6 +671,7 @@
 		901AE3F41F58008600DCE740 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTipUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -653,6 +684,7 @@
 		901AE3F51F58008600DCE740 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A2H3LGABL7;
 				INFOPLIST_FILE = WXZTipUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

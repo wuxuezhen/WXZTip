@@ -98,7 +98,7 @@
 }
 
 - (void)show{
-    UIWindow *window = [[[UIApplication sharedApplication] windows] lastObject];
+    UIWindow *window = [[[UIApplication sharedApplication] windows] firstObject];
     _contentView.center = window.center;
     [window  addSubview:_contentView];
     [self showAnimation];
@@ -106,7 +106,7 @@
 }
 
 - (void)showFromTopOffset:(CGFloat)top{
-    UIWindow *window = [[[UIApplication sharedApplication] windows] lastObject];
+    UIWindow *window = [[[UIApplication sharedApplication] windows] firstObject];
     _contentView.center = CGPointMake(window.center.x, top + _contentView.frame.size.height/2);
     [window  addSubview:_contentView];
     [self showAnimation];
@@ -114,7 +114,7 @@
 }
 
 - (void)showFromBottomOffset:(CGFloat)bottom{
-    UIWindow *window = [[[UIApplication sharedApplication] windows] lastObject];
+    UIWindow *window = [[[UIApplication sharedApplication] windows] firstObject];
     _contentView.center = CGPointMake(window.center.x, window.frame.size.height-(bottom + _contentView.frame.size.height/2));
     [window  addSubview:_contentView];
     [self showAnimation];

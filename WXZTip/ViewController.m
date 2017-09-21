@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "TipViewController.h"
 #import "MBViewController.h"
+#import "WXZTip-Bridging-Header.h"
 #import <Masonry/Masonry.h>
+#import "WXZTip-Swift.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *dataArray;
@@ -28,6 +30,9 @@
         
     }];
     
+}
+-(void)showYouName{
+    NSLog(@"showYouName");
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.dataArray.count;

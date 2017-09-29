@@ -18,7 +18,73 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
     self.window.rootViewController = nav;
     // Override point for customization after application launch.
+    [self creatShortcutItem];
+    [self actionOptions:launchOptions];
+    
+
     return YES;
+}
+- (void)creatShortcutItem {
+    //创建系统风格的icon
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    for (int i = 0; i < 6; i ++) {
+        UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"com.yang.share"
+                                                                           localizedTitle:@"分享"
+                                                                        localizedSubtitle:@"分享副标题"
+                                                                                     icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare]
+                                                                                 userInfo:nil];
+        [items addObject:item];
+    }
+    
+    
+    //添加到快捷选项数组
+    [UIApplication sharedApplication].shortcutItems = items;
+}
+
+-(void)actionOptions:(NSDictionary *)launchOptions{
+    UIApplicationShortcutItem *shortcutItem = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
+    if (shortcutItem) {
+        //判断设置的快捷选项标签唯一标识，根据不同标识执行不同操作
+        if([shortcutItem.type isEqualToString:@"com.yang.one"]){
+            NSLog(@"新启动APP-- 第一个按钮");
+        } else if ([shortcutItem.type isEqualToString:@"com.yang.search"]) {
+            //进入搜索界面
+            NSLog(@"新启动APP-- 搜索");
+        } else if ([shortcutItem.type isEqualToString:@"com.yang.add"]) {
+            //进入分享界面
+            NSLog(@"新启动APP-- 添加联系人");
+        }else if ([shortcutItem.type isEqualToString:@"com.yang.share"]) {
+            NSArray *arr = @[@"hello 3D Touch"];
+            UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:arr applicationActivities:nil];
+            [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+            }];
+            NSLog(@"新启动APP-- 分享");
+        }
+    }
+}
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    if (shortcutItem) {
+        //判断设置的快捷选项标签唯一标识，根据不同标识执行不同操作
+        if([shortcutItem.type isEqualToString:@"com.yang.one"]){
+            NSLog(@"APP没被杀死-- 第一个按钮");
+        } else if ([shortcutItem.type isEqualToString:@"com.yang.search"]) {
+            //进入搜索界面
+            NSLog(@"APP没被杀死-- 搜索");
+        } else if ([shortcutItem.type isEqualToString:@"com.yang.add"]) {
+            //进入分享界面
+            NSLog(@"APP没被杀死-- 添加联系人");
+        }else if ([shortcutItem.type isEqualToString:@"com.yang.share"]) {
+            NSArray *arr = @[@"hello 3D Touch"];
+            UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:arr applicationActivities:nil];
+            [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+            }];
+            NSLog(@"APP没被杀死-- 分享");
+        }
+    }
+    
+    if (completionHandler) {
+        completionHandler(YES);
+    }
 }
 
 

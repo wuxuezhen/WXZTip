@@ -8,6 +8,7 @@ target ‘WXZTip’ do
     pod 'SDWebImage', '~>3.8'
     pod 'Masonry'
     pod 'JSONModel'
+    pod 'DJI-SDK-iOS'
 end
 
 

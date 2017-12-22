@@ -32,7 +32,6 @@
 		901AE42A1F59380200DCE740 /* Loading_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41E1F59380200DCE740 /* Loading_8.png */; };
 		901AE42B1F59380200DCE740 /* Loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41F1F59380200DCE740 /* Loading_9.png */; };
 		90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADD9811F73B9D7009C5498 /* SListViewController.swift */; };
-		90FBE8131F6BDE2600EDD021 /* WDGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FBE8121F6BDE2600EDD021 /* WDGData.m */; };
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
 /* End PBXBuildFile section */
 
@@ -94,8 +93,6 @@
 		901AE41F1F59380200DCE740 /* Loading_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading_9.png; sourceTree = "<group>"; };
 		90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXZTip-Bridging-Header.h"; sourceTree = "<group>"; };
 		90ADD9811F73B9D7009C5498 /* SListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SListViewController.swift; sourceTree = "<group>"; };
-		90FBE8111F6BDE2600EDD021 /* WDGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGData.h; sourceTree = "<group>"; };
-		90FBE8121F6BDE2600EDD021 /* WDGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGData.m; sourceTree = "<group>"; };
 		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,8 +173,6 @@
 				901AE40E1F59100D00DCE740 /* RootViewController.m */,
 				901AE3C91F58008600DCE740 /* ViewController.h */,
 				901AE3CA1F58008600DCE740 /* ViewController.m */,
-				90FBE8111F6BDE2600EDD021 /* WDGData.h */,
-				90FBE8121F6BDE2600EDD021 /* WDGData.m */,
 				901AE4101F5910DA00DCE740 /* TipViewController.h */,
 				901AE4111F5910DA00DCE740 /* TipViewController.m */,
 				901AE40A1F590FF900DCE740 /* MBViewController.h */,
@@ -464,7 +459,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90FBE8131F6BDE2600EDD021 /* WDGData.m in Sources */,
 				901AE40C1F590FF900DCE740 /* MBViewController.m in Sources */,
 				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
 				901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */,

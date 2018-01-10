@@ -35,6 +35,9 @@
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
 		F2FF96CF2005F28300C2F268 /* UIViewController+Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */; };
 		F2FF96D02005F28300C2F268 /* UITableView+JMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */; };
+		F2FF96D32006089600C2F268 /* JMRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96D22006089600C2F268 /* JMRefreshNormalHeader.m */; };
+		F2FF96D6200609A100C2F268 /* JMRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96D5200609A100C2F268 /* JMRefreshGifHeader.m */; };
+		F2FF96DC20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96DB20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,12 @@
 		F2FF96CC2005F28300C2F268 /* UITableView+JMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JMRefresh.h"; sourceTree = "<group>"; };
 		F2FF96CD2005F28300C2F268 /* UIViewController+Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hud.h"; sourceTree = "<group>"; };
 		F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JMRefresh.m"; sourceTree = "<group>"; };
+		F2FF96D12006089600C2F268 /* JMRefreshNormalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRefreshNormalHeader.h; sourceTree = "<group>"; };
+		F2FF96D22006089600C2F268 /* JMRefreshNormalHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRefreshNormalHeader.m; sourceTree = "<group>"; };
+		F2FF96D4200609A100C2F268 /* JMRefreshGifHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRefreshGifHeader.h; sourceTree = "<group>"; };
+		F2FF96D5200609A100C2F268 /* JMRefreshGifHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRefreshGifHeader.m; sourceTree = "<group>"; };
+		F2FF96DA20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRefreshnAutoNormalFooter.h; sourceTree = "<group>"; };
+		F2FF96DB20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRefreshnAutoNormalFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +272,12 @@
 				F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */,
 				F2FF96CC2005F28300C2F268 /* UITableView+JMRefresh.h */,
 				F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */,
+				F2FF96D12006089600C2F268 /* JMRefreshNormalHeader.h */,
+				F2FF96D22006089600C2F268 /* JMRefreshNormalHeader.m */,
+				F2FF96D4200609A100C2F268 /* JMRefreshGifHeader.h */,
+				F2FF96D5200609A100C2F268 /* JMRefreshGifHeader.m */,
+				F2FF96DA20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.h */,
+				F2FF96DB20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.m */,
 			);
 			path = Resfresh;
 			sourceTree = "<group>";
@@ -481,10 +496,13 @@
 				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
 				901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */,
 				F2FF96CF2005F28300C2F268 /* UIViewController+Hud.m in Sources */,
+				F2FF96DC20060AEF00C2F268 /* JMRefreshnAutoNormalFooter.m in Sources */,
+				F2FF96D6200609A100C2F268 /* JMRefreshGifHeader.m in Sources */,
 				901AE3CB1F58008600DCE740 /* ViewController.m in Sources */,
 				901AE3C81F58008600DCE740 /* AppDelegate.m in Sources */,
 				F2FF96D02005F28300C2F268 /* UITableView+JMRefresh.m in Sources */,
 				901AE4121F5910DA00DCE740 /* TipViewController.m in Sources */,
+				F2FF96D32006089600C2F268 /* JMRefreshNormalHeader.m in Sources */,
 				901AE3C51F58008600DCE740 /* main.m in Sources */,
 				90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */,
 			);

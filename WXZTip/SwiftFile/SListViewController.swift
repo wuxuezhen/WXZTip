@@ -19,7 +19,7 @@ class SListViewController: UIViewController,UITableViewDataSource,UITableViewDel
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.backToPrevious();
     }
     
     var table = UITableView()

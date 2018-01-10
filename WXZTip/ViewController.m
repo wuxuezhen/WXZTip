@@ -12,6 +12,8 @@
 #import "WXZTip-Bridging-Header.h"
 #import <Masonry/Masonry.h>
 #import "WXZTip-Swift.h"
+#import "UITableView+JMRefresh.h"
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *dataArray;
@@ -24,12 +26,18 @@
     self.dataArray = @[@[@"tip"],@[@"MB"]];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.equalTo(self.view);
-        make.top.equalTo(self.view).offset(0);
-        make.bottom.equalTo(self.view.mas_bottom);
-        
+        make.leading.bottom.trailing.equalTo(self.view);
+        make.top.equalTo(self.mas_topLayoutGuide);
     }];
+    [self.tableView jm_headerGitRefreshTarget:self selecter:@selector(ss)];
     
+    
+}
+-(void)ss{
+    NSLog(@"endRefresh");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView endRefresh];
+    });
 }
 -(void)showYouName{
     NSLog(@"showYouName");
@@ -56,18 +64,18 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *tip = self.dataArray[indexPath.section][indexPath.row];
-//    SListViewController *list = [[SListViewController alloc]init];
-//    list.title = tip;
-//    [self.navigationController pushViewController:list animated:YES];
-    if (indexPath.section == 0) {
-        TipViewController *tipVc = [[TipViewController alloc]init];
-        tipVc.title = tip;
-        [self.navigationController pushViewController:tipVc animated:YES];
-    }else{
-        MBViewController *mbVc = [[MBViewController alloc]init];
-        mbVc.title = tip;
-        [self.navigationController pushViewController:mbVc animated:YES];
-    }
+    SListViewController *list = [[SListViewController alloc]init];
+    list.title = tip;
+    [self.navigationController pushViewController:list animated:YES];
+//    if (indexPath.section == 0) {
+//        TipViewController *tipVc = [[TipViewController alloc]init];
+//        tipVc.title = tip;
+//        [self.navigationController pushViewController:tipVc animated:YES];
+//    }else{
+//        MBViewController *mbVc = [[MBViewController alloc]init];
+//        mbVc.title = tip;
+//        [self.navigationController pushViewController:mbVc animated:YES];
+//    }
 }
 -(UITableView *)tableView{
     if (!_tableView) {

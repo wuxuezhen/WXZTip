@@ -16,6 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    nav.navigationBar.barTintColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
     // Override point for customization after application launch.
     [self creatShortcutItem];

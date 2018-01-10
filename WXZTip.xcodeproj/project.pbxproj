@@ -33,6 +33,8 @@
 		901AE42B1F59380200DCE740 /* Loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41F1F59380200DCE740 /* Loading_9.png */; };
 		90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADD9811F73B9D7009C5498 /* SListViewController.swift */; };
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
+		F2FF96CF2005F28300C2F268 /* UIViewController+Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */; };
+		F2FF96D02005F28300C2F268 /* UITableView+JMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,10 @@
 		90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXZTip-Bridging-Header.h"; sourceTree = "<group>"; };
 		90ADD9811F73B9D7009C5498 /* SListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SListViewController.swift; sourceTree = "<group>"; };
 		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
+		F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hud.m"; sourceTree = "<group>"; };
+		F2FF96CC2005F28300C2F268 /* UITableView+JMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JMRefresh.h"; sourceTree = "<group>"; };
+		F2FF96CD2005F28300C2F268 /* UIViewController+Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hud.h"; sourceTree = "<group>"; };
+		F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JMRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 		901AE3C21F58008600DCE740 /* WXZTip */ = {
 			isa = PBXGroup;
 			children = (
+				F2FF96CA2005F28300C2F268 /* Resfresh */,
 				90ADD97F1F73B963009C5498 /* SwiftFile */,
 				901AE3F61F5801B600DCE740 /* Tip */,
 				901AE3C61F58008600DCE740 /* AppDelegate.h */,
@@ -249,6 +256,17 @@
 			path = SwiftFile;
 			sourceTree = "<group>";
 		};
+		F2FF96CA2005F28300C2F268 /* Resfresh */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF96CD2005F28300C2F268 /* UIViewController+Hud.h */,
+				F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */,
+				F2FF96CC2005F28300C2F268 /* UITableView+JMRefresh.h */,
+				F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */,
+			);
+			path = Resfresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,7 +337,7 @@
 				TargetAttributes = {
 					901AE3BF1F58008600DCE740 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A2H3LGABL7;
+						DevelopmentTeam = U9LB4M6238;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -462,8 +480,10 @@
 				901AE40C1F590FF900DCE740 /* MBViewController.m in Sources */,
 				901AE3F91F5801B600DCE740 /* WXZTipView.m in Sources */,
 				901AE40F1F59100D00DCE740 /* RootViewController.m in Sources */,
+				F2FF96CF2005F28300C2F268 /* UIViewController+Hud.m in Sources */,
 				901AE3CB1F58008600DCE740 /* ViewController.m in Sources */,
 				901AE3C81F58008600DCE740 /* AppDelegate.m in Sources */,
+				F2FF96D02005F28300C2F268 /* UITableView+JMRefresh.m in Sources */,
 				901AE4121F5910DA00DCE740 /* TipViewController.m in Sources */,
 				901AE3C51F58008600DCE740 /* main.m in Sources */,
 				90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */,
@@ -617,7 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A2H3LGABL7;
+				DEVELOPMENT_TEAM = U9LB4M6238;
 				INFOPLIST_FILE = WXZTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxz.WXZTip;
@@ -634,7 +654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A2H3LGABL7;
+				DEVELOPMENT_TEAM = U9LB4M6238;
 				INFOPLIST_FILE = WXZTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxz.WXZTip;

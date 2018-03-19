@@ -16,9 +16,9 @@
     
     NSArray *images = [self headerImages];
     [self setImages:images duration:2 forState:MJRefreshStateRefreshing];
-    [self setImages:@[images[0]] forState:MJRefreshStateIdle];
+    [self setImages:@[images[13]] forState:MJRefreshStateIdle];
     [self setImages:@[images[1]] forState:MJRefreshStateWillRefresh];
-    [self setImages:@[images[2]] forState:MJRefreshStatePulling];
+    [self setImages:@[images[9]] forState:MJRefreshStatePulling];
     
     self.stateLabel.hidden = YES;
     self.lastUpdatedTimeLabel.hidden = YES;
@@ -26,8 +26,8 @@
 }
 -(NSArray *)headerImages{
     NSMutableArray *headerImages = [NSMutableArray array];
-    for (int i = 1; i <= 4; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"topload%d",i]];
+    for (int i = 1; i <= 14; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"step%d",i]];
         [headerImages addObject:image];
     }
     return headerImages;

@@ -24,6 +24,7 @@
     
     self.mj_header = [JMRefreshGifHeader headerWithRefreshingTarget:target
                                                    refreshingAction:selecter];
+    self.mj_header.backgroundColor = [UIColor whiteColor];
 }
 
 

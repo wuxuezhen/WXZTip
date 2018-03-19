@@ -7,30 +7,34 @@
 //
 
 #import "JMRefreshGifHeader.h"
-
+@interface JMRefreshGifHeader()
+@property (nonatomic, strong) NSMutableArray *headerImages;
+@end
 @implementation JMRefreshGifHeader
 
 //重写父类
 -(void)prepare{
     [super prepare];
     
-    NSArray *images = [self headerImages];
+    NSArray *images = self.headerImages;
     [self setImages:images duration:2 forState:MJRefreshStateRefreshing];
-    [self setImages:@[images[13]] forState:MJRefreshStateIdle];
-    [self setImages:@[images[1]] forState:MJRefreshStateWillRefresh];
-    [self setImages:@[images[9]] forState:MJRefreshStatePulling];
+    [self setImages:@[images[7]] forState:MJRefreshStateIdle];
+    [self setImages:@[images[8]] forState:MJRefreshStatePulling];
     
     self.stateLabel.hidden = YES;
     self.lastUpdatedTimeLabel.hidden = YES;
     
 }
+
 -(NSArray *)headerImages{
-    NSMutableArray *headerImages = [NSMutableArray array];
-    for (int i = 1; i <= 14; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"step%d",i]];
-        [headerImages addObject:image];
+    if (!_headerImages) {
+        _headerImages = [NSMutableArray arrayWithCapacity:0];
+        for (int i = 1; i <= 14; i++) {
+            UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"step%d",i]];
+            [_headerImages addObject:image];
+        }
     }
-    return headerImages;
+    return _headerImages;
 }
 
 //如果需要自己重新布局子控件

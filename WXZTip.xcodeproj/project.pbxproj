@@ -33,6 +33,7 @@
 		901AE42B1F59380200DCE740 /* Loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 901AE41F1F59380200DCE740 /* Loading_9.png */; };
 		90ADD9821F73B9D7009C5498 /* SListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADD9811F73B9D7009C5498 /* SListViewController.swift */; };
 		F22A9BF4858130AD7DAF4A44 /* libPods-WXZTip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8901DA9779996F72F29BF3 /* libPods-WXZTip.a */; };
+		F2AD446A206E15C700D01FC4 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = F2AD4469206E15C700D01FC4 /* package.json */; };
 		F2FF96CF2005F28300C2F268 /* UIViewController+Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */; };
 		F2FF96D02005F28300C2F268 /* UITableView+JMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96CE2005F28300C2F268 /* UITableView+JMRefresh.m */; };
 		F2FF96D32006089600C2F268 /* JMRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF96D22006089600C2F268 /* JMRefreshNormalHeader.m */; };
@@ -99,6 +100,7 @@
 		90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXZTip-Bridging-Header.h"; sourceTree = "<group>"; };
 		90ADD9811F73B9D7009C5498 /* SListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SListViewController.swift; sourceTree = "<group>"; };
 		C2A2914048088D0AECF479F7 /* Pods-WXZTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXZTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXZTip/Pods-WXZTip.debug.xcconfig"; sourceTree = "<group>"; };
+		F2AD4469206E15C700D01FC4 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		F2FF96CB2005F28300C2F268 /* UIViewController+Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hud.m"; sourceTree = "<group>"; };
 		F2FF96CC2005F28300C2F268 /* UITableView+JMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JMRefresh.h"; sourceTree = "<group>"; };
 		F2FF96CD2005F28300C2F268 /* UIViewController+Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hud.h"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		901AE3B71F58008600DCE740 = {
 			isa = PBXGroup;
 			children = (
+				F2AD4466206E153700D01FC4 /* ReactComponent */,
 				901AE4131F59380200DCE740 /* image */,
 				901AE3C21F58008600DCE740 /* WXZTip */,
 				901AE3DC1F58008600DCE740 /* WXZTipTests */,
@@ -263,6 +266,14 @@
 				90ADD9801F73B9D7009C5498 /* WXZTip-Bridging-Header.h */,
 			);
 			path = SwiftFile;
+			sourceTree = "<group>";
+		};
+		F2AD4466206E153700D01FC4 /* ReactComponent */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD4469206E15C700D01FC4 /* package.json */,
+			);
+			path = ReactComponent;
 			sourceTree = "<group>";
 		};
 		F2FF96CA2005F28300C2F268 /* Resfresh */ = {
@@ -395,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2AD446A206E15C700D01FC4 /* package.json in Resources */,
 				901AE4291F59380200DCE740 /* Loading_7.png in Resources */,
 				901AE3D31F58008600DCE740 /* LaunchScreen.storyboard in Resources */,
 				901AE3D01F58008600DCE740 /* Assets.xcassets in Resources */,

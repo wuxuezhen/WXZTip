@@ -63,18 +63,18 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *tip = self.dataArray[indexPath.section][indexPath.row];
-    SListViewController *list = [[SListViewController alloc]init];
-    list.title = tip;
-    [self.navigationController pushViewController:list animated:YES];
-//    if (indexPath.section == 0) {
-//        TipViewController *tipVc = [[TipViewController alloc]init];
-//        tipVc.title = tip;
-//        [self.navigationController pushViewController:tipVc animated:YES];
-//    }else{
-//        MBViewController *mbVc = [[MBViewController alloc]init];
-//        mbVc.title = tip;
-//        [self.navigationController pushViewController:mbVc animated:YES];
-//    }
+//    SListViewController *list = [[SListViewController alloc]init];
+//    list.title = tip;
+//    [self.navigationController pushViewController:list animated:YES];
+    if (indexPath.section == 0) {
+        TipViewController *tipVc = [[TipViewController alloc]init];
+        tipVc.title = tip;
+        [self.navigationController pushViewController:tipVc animated:YES];
+    }else{
+        MBViewController *mbVc = [[MBViewController alloc]init];
+        mbVc.title = tip;
+        [self.navigationController pushViewController:mbVc animated:YES];
+    }
 }
 -(UITableView *)tableView{
     if (!_tableView) {

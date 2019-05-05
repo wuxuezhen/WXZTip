@@ -1,7 +1,5 @@
-//
-// IQUIWindow+Hierarchy.m
-// https://github.com/hackiftekhar/IQKeyboardManager
-// Copyright (c) 2013-16 Iftekhar Qurashi.
+// AFCompatibilityMacros.h
+// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,31 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "IQUIWindow+Hierarchy.h"
-#import <UIKit/UINavigationController.h>
+#ifndef AFCompatibilityMacros_h
+#define AFCompatibilityMacros_h
 
-@implementation UIWindow (IQ_UIWindow_Hierarchy)
+#ifdef API_UNAVAILABLE
+    #define AF_API_UNAVAILABLE(x) API_UNAVAILABLE(x)
+#else
+    #define AF_API_UNAVAILABLE(x)
+#endif // API_UNAVAILABLE
 
-- (UIViewController*)topMostWindowController
-{
-    UIViewController *topController = [self rootViewController];
-    
-    //  Getting topMost ViewController
-    while ([topController presentedViewController])	topController = [topController presentedViewController];
-	
-    //  Returning topMost ViewController
-    return topController;
-}
+#if __has_warning("-Wunguarded-availability-new")
+    #define AF_CAN_USE_AT_AVAILABLE 1
+#else
+    #define AF_CAN_USE_AT_AVAILABLE 0
+#endif
 
-- (UIViewController*)currentViewController;
-{
-    UIViewController *currentViewController = [self topMostWindowController];
-    
-    while ([currentViewController isKindOfClass:[UINavigationController class]] && [(UINavigationController*)currentViewController topViewController])
-        currentViewController = [(UINavigationController*)currentViewController topViewController];
-    
-    return currentViewController;
-}
-
-
-@end
+#endif /* AFCompatibilityMacros_h */

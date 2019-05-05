@@ -32,6 +32,16 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 3.8)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
@@ -43,4 +53,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8a8230d4672a2685dcf62ff85179e16ed953a9a7
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.1
